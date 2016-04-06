@@ -14,7 +14,10 @@ module.exports = {
           presets: ['es2015'],
           plugins: ['transform-es2015-modules-commonjs'],
         }
-      }
+      },
+      {
+       test: /\.glsl$/, loader: 'raw',
+      },
     ],
     resolve: {
       extensions: ['', '.js', '.jsx']
